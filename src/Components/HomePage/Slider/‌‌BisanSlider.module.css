@@ -1,0 +1,213 @@
+.holder {
+  width: 100%;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  overflow: hidden;
+  padding: 10px;
+  /* border: 1px solid blue; */
+}
+
+.wrapper {
+  /* border: 1px solid red; */
+  width: 400px;
+  height: 520px;
+  padding: 10px;
+  position: relative;
+  max-width: 100%;
+}
+
+.item {
+  /* border: 1px solid red; */
+  height: 100%;
+  width: 280px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  /* border: 1px solid blue;
+  background-color: blue; */
+  visibility: hidden;
+}
+
+.item-1 {
+  z-index: 1;
+  transform: translate3d(-200px, 0px, 0px) scale(0.7);
+  visibility: visible;
+  opacity: 0.9;
+}
+.wrapper.forward > .item-1 {
+  animation: first 0.3s linear;
+}
+.wrapper.backward > .item-1 {
+  animation: firstBack 0.3s linear;
+}
+
+.item-2 {
+  z-index: 2;
+  transform: translate3d(-150px, 0px, 0px) scale(0.8);
+  visibility: visible;
+  /* opacity: 0.9; */
+}
+.wrapper.forward > .item-2 {
+  animation: second 0.3s linear;
+}
+.wrapper.backward > .item-2 {
+  animation: secondBack 0.3s linear;
+}
+
+.item-3 {
+  z-index: 3;
+  transform: translate3d(-80px, 0px, 0px) scale(0.9);
+  visibility: visible;
+  /* opacity: 0.9; */
+}
+.wrapper.forward > .item-3 {
+  animation: third 0.3s linear;
+}
+.wrapper.backward > .item-3 {
+  animation: thirdBack 0.3s linear;
+}
+
+.item-4 {
+  z-index: 4;
+  visibility: visible;
+}
+.wrapper.forward > .item-4 {
+  animation: forth 0.3s linear;
+}
+.wrapper.backward > .item-4 {
+  animation: forthBack 0.3s linear;
+}
+
+.wrapper.forward > .item-5 {
+  animation: fifth 0.3s linear;
+  z-index: 5;
+}
+.wrapper.backward > .item-5 {
+  animation: fifthBack 0.3s linear;
+  z-index: 5-1;
+}
+
+.button {
+  position: absolute;
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  background-color: rgb(253, 224, 71);
+  color: gray;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  filter: drop-shadow(0px 5px 20px rgba(0, 0, 0, 0.05));
+  z-index: 3;
+  cursor: pointer;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.next {
+  right: 0;
+}
+.perv {
+  left: 0;
+}
+
+@keyframes first {
+  from {
+    opacity: 0;
+    transform: translate3d(-260px, 0px, 0px) scale(0.6);
+  }
+  to {
+    opacity: 1;
+    transform: translate3d(-200px, 0px, 0px) scale(0.7);
+  }
+}
+@keyframes firstBack {
+  from {
+    transform: translate3d(-150px, 0px, 0px) scale(0.8);
+  }
+  to {
+    transform: translate3d(-200px, 0px, 0px) scale(0.7);
+  }
+}
+
+@keyframes second {
+  from {
+    transform: translate3d(-200px, 0px, 0px) scale(0.7);
+  }
+  to {
+    transform: translate3d(-150px, 0px, 0px) scale(0.8);
+  }
+}
+@keyframes secondBack {
+  from {
+    transform: translate3d(-80px, 0px, 0px) scale(0.9);
+  }
+  to {
+    transform: translate3d(-150px, 0px, 0px) scale(0.8);
+  }
+}
+
+@keyframes third {
+  from {
+    transform: translate3d(-150px, 0px, 0px) scale(0.8);
+  }
+  to {
+    transform: translate3d(-80px, 0px, 0px) scale(0.9);
+  }
+}
+@keyframes thirdBack {
+  from {
+    /* opacity: 1; */
+    transform: translate3d(0px, 0px, 0px) scale(1);
+  }
+  to {
+    /* opacity: 0.9; */
+    transform: translate3d(-80px, 0px, 0px) scale(0.9);
+  }
+}
+
+@keyframes forth {
+  from {
+    opacity: 1;
+    transform: translate3d(-80px, 0px, 0px) scale(0.9);
+  }
+  to {
+    opacity: 1;
+    transform: translate3d(0px, 0px, 0px) scale(1);
+  }
+}
+@keyframes forthBack {
+  from {
+    opacity: 0;
+    transform: translate3d(80px, 0px, 0px) scale(1.1);
+  }
+  to {
+    opacity: 1;
+    transform: translate3d(0px, 0px, 0px) scale(1);
+  }
+}
+
+@keyframes fifth {
+  from {
+    opacity: 1;
+    visibility: visible;
+    transform: translate3d(0px, 0px, 0px) scale(1);
+  }
+  to {
+    opacity: 0;
+    visibility: hidden;
+    transform: translate3d(80px, 0px, 0px) scale(1.1);
+  }
+}
+@keyframes fifthBack {
+  from {
+    opacity: 0.9;
+    visibility: visible;
+    transform: translate3d(-200px, 0px, 0px) scale(0.7);
+  }
+  to {
+    opacity: 0;
+    transform: translate3d(-260px, 0px, 0px) scale(0.6);
+  }
+}

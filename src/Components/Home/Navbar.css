@@ -1,0 +1,148 @@
+/* .first-component {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 200px;
+  z-index: 23;
+  width: 87%;
+  @media (max-width: 1024px) {
+    display: none;
+  }
+}
+.navigation.holder {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  margin-top: 50px;
+  padding: 10px 20px;
+  border-radius: 16px;
+  background-color: white;
+}
+
+.phone.information {
+  display: flex;
+  padding: 8px 16px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  border-radius: 10px;
+  background-color: #fde047;
+}
+.phone.number {
+  color: #697a80;
+  font-family: IRANSans(FaNum);
+  font-size: 12px !important;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+nav ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  white-space: nowrap;
+  display: inline-flex;
+  justify-content: center;
+  align-items: flex-end;
+  gap: 16px;
+}
+
+.subMenu {
+  width: 145px;
+  background-color: white;
+  top: 20px;
+  right: 0px;
+}
+.secondsubMenu {
+  width: 145px;
+  background-color: white;
+  top: 33px;
+  right: 0px;
+}
+.superSubMenu {
+  width: 145px;
+  background-color: white;
+}
+
+nav .mainMenu > li {
+  display: flex;
+  flex-direction: row;
+  padding: 6px 8px;
+  justify-content: center;
+  align-items: center;
+  gap: 4px;
+}
+
+nav .subMenu > li {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+nav .secondsubMenu > li {
+  width: 100%;
+}
+nav .superSubMenu > li {
+  margin-right: 15px;
+}
+
+nav a {
+  color: #666;
+  text-align: right;
+  font-family: IRANSans;
+  font-size: 12px !important;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  position: relative;
+  display: block;
+  padding-right: 4px;
+}
+
+nav li:hover {
+  background: lightyellow;
+  cursor: pointer;
+}
+
+nav .subMenu,
+nav .secondsubMenu,
+nav .superSubMenu {
+  position: absolute;
+  display: none;
+  z-index: 999;
+}
+
+nav .subMenu li {
+  position: relative;
+}
+nav .secondsubMenu li {
+  position: relative;
+}
+nav .mainMenu li {
+  position: relative;
+}
+
+ul.superSubMenu {
+  top: 0;
+  right: 0px;
+  transform: translate(-100%, 0);
+  z-index: 999;
+}
+
+nav .mainMenu > li:hover .subMenu,
+nav .mainMenu > li:hover .secondsubMenu,
+nav .subMenu > li:hover > .superSubMenu {
+  display: flex;
+  flex-direction: column;
+}
+
+.gif {
+  position: relative;
+  width: 120px !important;
+  height: 50px !important;
+} */

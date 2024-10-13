@@ -1,0 +1,163 @@
+/* .navbarr {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 0;
+} */
+
+.first-component {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  z-index: 23;
+  width: 85%;
+  @media (max-width: 1024px) {
+    display: none;
+  }
+}
+/* .navigation.holder {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  margin-top: 50px;
+  padding: 10px 20px;
+  border-radius: 16px;
+  background-color: white;
+} */
+
+/* .phone.information {
+  display: flex;
+  padding: 8px 16px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  border-radius: 10px;
+  background-color: #fde047;
+} */
+/* .phone.number {
+  color: #697a80;
+  font-family: IRANSans(FaNum);
+  font-size: 12px !important;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+} */
+
+/* .mainMenu {
+  z-index: 999;
+  display: flex;
+  align-items: center;
+  justify-content: center !important;
+  gap: 8px;
+} */
+
+/* .nav-item {
+  position: relative;
+  color: #666;
+  text-align: right;
+  font-family: IRANSans;
+  font-size: 12px !important;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  position: relative;
+  padding: 8px 8px;
+} */
+/* .nav-item a {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 5px;
+} */
+/* .submenu-item a {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 5px;
+} */
+/* .supersubmenu-item a {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 5px;
+} */
+
+nav li:hover {
+  background: lightyellow;
+  cursor: pointer;
+}
+
+/* .submenu-item {
+  position: relative;
+  padding: 4px 6px;
+} */
+/* .supersubmenu-item {
+  position: relative;
+  padding: 4px 6px;
+} */
+
+/* .submenu {
+  display: none;
+  position: absolute;
+  top: 100%;
+  right: 0;
+  background-color: #fff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  width: 145px;
+} */
+
+/* .supersubmenu {
+  display: none;
+  position: absolute;
+  top: 0;
+  right: 100%;
+  background-color: #fff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  width: 145px;
+} */
+
+.submenu-item:hover .supersubmenu {
+  display: block;
+}
+
+.nav-item:hover .submenu {
+  display: block;
+}
+
+.gif {
+  position: relative;
+  width: 120px !important;
+  height: 50px !important;
+}
+/* .submenu-item a.with-submenu {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 5px;
+} */
+/* 
+.submenu-item a.without-submenu {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 5px;
+} */
+
+/* a {
+  color: #666;
+  text-align: right;
+  font-family: IRANSans;
+  font-size: 12px !important;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  position: relative;
+  display: block;
+  padding: 8px 0px;
+  border: 1px solid red;
+} */

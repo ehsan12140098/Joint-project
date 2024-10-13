@@ -1,0 +1,46 @@
+.custom-select-container {
+  position: relative;
+  display: inline-block;
+  /* border: 1px solid red; */
+  width: 70%;
+}
+
+.selected-option {
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  cursor: pointer;
+  /* border: 1px solid green; */
+  direction: rtl;
+  padding: 12px;
+  border-radius: 24px;
+}
+
+.holder-options-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid red;
+}
+.options-container {
+  position: absolute;
+  top: 35px;
+  left: 10px;
+  width: 90%;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  /* border-top: none; */
+  border-radius: 4px;
+  z-index: 1;
+  /* border: 1px solid purple; */
+}
+
+.option {
+  padding: 8px;
+  cursor: pointer;
+  /* border: 1px solid red; */
+  direction: rtl;
+}
+
+.option:hover {
+  background-color: #f0f0f0;
+}

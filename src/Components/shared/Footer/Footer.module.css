@@ -1,0 +1,16 @@
+.withAnimation {
+  animation: scrollToTopAnimation 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+  animation-delay: 400ms;
+}
+
+@keyframes scrollToTopAnimation {
+  0% {
+    transform: translate3d(0, -10px, 0) scale3d(1.45, 1.45, 1.45);
+  }
+  50% {
+    transform: translate3d(0, 0px, 0) scale3d(1.5, 1.5, 1.5);
+  }
+  100% {
+    transform: translate3d(0, -10px, 0) scale3d(1.45, 1.45, 1.45);
+  }
+}
